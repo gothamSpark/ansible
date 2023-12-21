@@ -1,11 +1,11 @@
 - name: hello work
-  host: localhost
+  hosts: localhost
   become: yes
-  vars: 
+  vars:
     Course: "DevOps"
     Trainer: "Sivakumar"
     Duration: "110HRS"
   tasks:
-    name: check varibale
-    ansible.buitin.debug:
-      msg: "hi {{Course}} {{Trainer}} {{Duration}}"
+    - name: check variable
+      ansible.builtin.debug:
+        msg: "hi {{ Course }} {{ Trainer }} {{ Duration }}"
