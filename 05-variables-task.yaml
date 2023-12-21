@@ -5,9 +5,11 @@
     Course: "DevOps"
     Trainer: "Sivakumar"
     Duration: "110HRS"
+    a: "bla bla"
   tasks:
   - name: check variables
     vars: #task level
       Course: "DevOps with AWS"
+      a: "task level"
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}} {{a}}"

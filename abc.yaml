@@ -4,12 +4,12 @@
   vars_files:
   - variables.yaml
   vars:
-    Course: "DevOps"
+    Course: "DevOps-from outside task"
     Trainer: "Sivakumar"
     Duration: "110HRS"
   tasks:
     - name: check variable
       vars: #task level
-        Course: "DevOps with AWS"
+        Course: "DevOps from task"
       ansible.builtin.debug:
         msg: "hi {{ Course }} {{ Trainer }} {{ Duration }} {{a}}"
