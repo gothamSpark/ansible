@@ -1,10 +1,7 @@
 - name: hello work
   hosts: localhost
   become: yes
-  vars:
-    Course: "DevOps-from outside task"
-    Trainer: "Sivakumar"
-    Duration: "110HRS"
+
 
 
 
