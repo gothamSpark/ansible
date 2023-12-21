@@ -5,8 +5,7 @@
     Course: "DevOps-from outside task"
     Trainer: "Sivakumar"
     Duration: "110HRS"
-  vars_files:
-  - variables.yaml
+
   vars_prompt:
   - name: Course
     prompt: Please enter your username
