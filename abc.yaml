@@ -15,4 +15,4 @@
     - name: check variable
       
       ansible.builtin.debug:
-        msg: "hi {{ Course }} {{ Trainer }} {{ Duration }} {{a}}"
+        msg: "hi {{ Course }} {{ Trainer }} {{ Duration }} "
