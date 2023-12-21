@@ -1,12 +1,13 @@
 - name: hello work
   hosts: localhost
   become: yes
-  vars_files:
-  - variables.yaml
-  vars:
+    vars:
     Course: "DevOps-from outside task"
     Trainer: "Sivakumar"
     Duration: "110HRS"
+  vars_files:
+  - variables.yaml
+
   tasks:
     - name: check variable
       
