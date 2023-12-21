@@ -6,10 +6,7 @@
     Trainer: "Sivakumar"
     Duration: "110HRS"
 
-  vars_prompt:
-  - name: Course
-    prompt: Please enter your username
-    private: false # user can see what they are entering
+
 
   tasks:
     - name: check variable
