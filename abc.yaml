@@ -1,11 +1,15 @@
 - name: hello work
   hosts: localhost
   become: yes
+  vars_files:
+  - variables.yaml
   vars:
     Course: "DevOps"
     Trainer: "Sivakumar"
     Duration: "110HRS"
   tasks:
     - name: check variable
+      vars: #task level
+        Course: "DevOps with AWS"
       ansible.builtin.debug:
-        msg: "hi {{ Course }} {{ Trainer }} {{ Duration }}"
+        msg: "hi {{ Course }} {{ Trainer }} {{ Duration }} {{a}}"
